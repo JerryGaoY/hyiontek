@@ -184,7 +184,7 @@ var _hmt = _hmt || [];
                 <span class="level-item has-text-grey">
                     
                     
-                    7 minutes 读完 (大约 1029 个字)
+                    7 minutes 读完 (大约 1030 个字)
                 </span>
                 
                 
@@ -198,60 +198,16 @@ var _hmt = _hmt || [];
         </h1>
         <div class="content">
             <p>费劲一番周折😂，终于成功地建成了一个自己的博客。在此，就把我自己建站的经验写成教程，以供参考。</p>
-<h4 id="建站方法优劣："><a href="#建站方法优劣：" class="headerlink" title="建站方法优劣："></a>建站方法优劣：</h4><p>&emsp;&emsp;优：耗资少；简单，适合初学者；网上教程多；有大量国内开发者。</p>
-<p>&emsp;&emsp;劣：博文多了之后生成速度变慢</p>
-<p>&emsp;&emsp;本机环境：Windows 10 x64 专业版</p>
-<h4 id="准备条件："><a href="#准备条件：" class="headerlink" title="准备条件："></a>准备条件：</h4><p>&emsp;&emsp;安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">node.js</a></p>
-<p>&emsp;&emsp;安装<a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></p>
-<p>&emsp;&emsp;安装<a href="https://code.visualstudio.com/" target="_blank" rel="noopener">Visual Studio Code</a></p>
-<p>&emsp;&emsp;以管理员身份运行cmd</p>
-<h4 id="进入正题"><a href="#进入正题" class="headerlink" title="进入正题"></a>进入正题</h4><p>由于直接使用npm install指令在国内下载速度有时较慢，所以可以安装cnpm来替代npm：</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-
-<h5 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h5><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-
-<h5 id="生成博客文件"><a href="#生成博客文件" class="headerlink" title="生成博客文件"></a>生成博客文件</h5><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init file  #init后的file用文件目录替代</span><br><span class="line">cd file</span><br><span class="line">cnpm install</span><br></pre></td></tr></table></figure>
-
-<h5 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h5><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-server --save     #生成本地服务器所需插件</span><br><span class="line">cnpm install hexo-deployer-git --save   #使用git方式进行部署博客所需插件</span><br></pre></td></tr></table></figure>
-
-<p>现在，一个博客的雏形就完成了。</p>
-<h4 id="创建GitHub仓库"><a href="#创建GitHub仓库" class="headerlink" title="创建GitHub仓库"></a>创建GitHub仓库</h4><p>打开<a href="https://github.com" target="_blank" rel="noopener">GitHub</a>并注册/登录。</p>
-<p>然后点击右上角“+”号创建仓库</p>
-<p><img src="https://s2.ax1x.com/2019/08/05/eRPb4A.png" alt="创建仓库"></p>
-<p>名称可以随便取，也可以用“自己的账户名称.GitHub.io”的形式，后者以后可直接访问https://账户名称.GitHub.io/打开博客。随后点击Create repository。</p>
-<p>在随后出现的页面中复制HTTPS地址，</p>
-<p><img src="https://s2.ax1x.com/2019/08/05/eRPXgP.png" alt="复制HTTPS"></p>
-<p>打开刚才生成博客的文件目录，找到名为_config.yml的文件，翻到底部，添加代码</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://github.com/JerryGaoY/hyiontek.git #填写刚才复制的内容</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-
-<h4 id="修改主题"><a href="#修改主题" class="headerlink" title="修改主题"></a>修改主题</h4><p>打开<a href="https://hexo.io/themes/" target="_blank" rel="noopener">Hexo主题</a>，自选主题。以我的博客为例，我用的是Icarus主题。回到cmd，在博客文件目录下输入代码：</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/ppoffice/hexo-theme-icarus.git themes/icarus</span><br></pre></td></tr></table></figure>
-
-<p>接下来，请将博客根目录下的_config.yml中的主题设置改为icarus：</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: icarus   #记得&quot;:&quot;后加空格</span><br></pre></td></tr></table></figure>
-
-<p>（另外，由于Icarus主题发布者没有在GitHub 仓库 master branch中发布主题配置文件_config.yml，所以我到他的site branch中下载了_config.theme.yml文件，修改文件名复制到themes/Icarus目录，其他主题一般不会遇到这种问题，不多赘述）</p>
-<p>然后，根据主题发布者提供的教程，修改themes目录下的_config.yml。</p>
-<p>修改完成，再回到cmd输入</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<p>如果不出错，这时候可以在<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a>查看效果，查看完，回到cmd，按Ctrl+C退出。</p>
-<h4 id="撰写博文"><a href="#撰写博文" class="headerlink" title="撰写博文"></a>撰写博文</h4><p>在cmd中输入</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new 模板 文章文件名</span><br></pre></td></tr></table></figure>
-
-<p>模板 处有三种类型，如下<br>|参数|功能|路径|<br>|:-|:-|:-|<br>|post|新建文章|/source/_posts/|<br>|draft|新建草稿|/source/_drafts/|<br>|page|新建页面（标签页，分类页等）|/source/|<br>找到生成的.md文件，用Visual Studio Code打开，进行编辑。编辑器遵守Markdown语法。单机右上角图标进行预览</p>
-<p><img src="https://s2.ax1x.com/2019/08/05/eRPL9I.png" alt="vscode Markdown预览"></p>
-<h4 id="上传前的准备"><a href="#上传前的准备" class="headerlink" title="上传前的准备"></a>上传前的准备</h4><p>如果想绑定自己注册的域名，就打开博客文件根目录中的source文件夹，新建.txt文件，修改文件名为CNAME（不要后缀名，大写），用记事本打开，输入域名，以本人的为例：hyiontek.com 保存。</p>
-<h4 id="上传到GitHub仓库"><a href="#上传到GitHub仓库" class="headerlink" title="上传到GitHub仓库"></a>上传到GitHub仓库</h4><p>在cmd中输入</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p>在弹窗中登录GitHub账户即可</p>
-<h4 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h4><p>打开<a href="https://www.cloudflare.com/zh-cn/" target="_blank" rel="noopener">CloudFlare</a>,注册，按照提示绑定域名，如图进行配置</p>
-<p><img src="https://s2.ax1x.com/2019/08/05/eRPO3t.png" alt="DNS配置"></p>
-<p>按照提示到域名注册商处修改dns服务器为cloudflare提供的服务器，完成配置。</p>
-
         </div>
         
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/08/03/Blog-making guide/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
         
         
     </div>

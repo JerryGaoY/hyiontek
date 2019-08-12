@@ -206,10 +206,22 @@ img.thumbnail {
   font-size: 1.15rem;
   position: relative;
 }
++ a,
++ img,
++ margin: auto,
++ display: block,
 .rtl {
   direction: rtl;
 }
++ a .level .level-item:not(:last-child),
++ img .level .level-item:not(:last-child),
++ margin: auto .level .level-item:not(:last-child),
++ display: block .level .level-item:not(:last-child),
 .rtl .level .level-item:not(:last-child),
++ a .level.is-mobile .level-item:not(:last-child),
++ img .level.is-mobile .level-item:not(:last-child),
++ margin: auto .level.is-mobile .level-item:not(:last-child),
++ display: block .level.is-mobile .level-item:not(:last-child),
 .rtl .level.is-mobile .level-item:not(:last-child) {
   margin-left: 0.75rem;
   margin-right: 0;

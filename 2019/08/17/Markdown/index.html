@@ -16,7 +16,7 @@
 <meta property="og:description" content="Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。Markdown的语法简洁明了、学习容易，而且功能比纯文本更强，因此有很多人用它写博客。以下是Markdown常用语法汇总。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://s2.ax1x.com/2019/08/17/mmq5k9.jpg">
-<meta property="og:updated_time" content="2019-08-17T13:18:24.963Z">
+<meta property="og:updated_time" content="2019-08-18T10:51:55.006Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Markdown 编辑器语法汇总">
 <meta name="twitter:description" content="Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。Markdown的语法简洁明了、学习容易，而且功能比纯文本更强，因此有很多人用它写博客。以下是Markdown常用语法汇总。">
@@ -190,7 +190,7 @@ var _hmt = _hmt || [];
                 <span class="level-item has-text-grey">
                     
                     
-                    11 minutes 读完 (大约 1579 个字)
+                    12 minutes 读完 (大约 1742 个字)
                 </span>
                 
                 
@@ -321,7 +321,15 @@ yield from range(x)</code></pre><p>如你不需要代码高亮，可以在代码
 <ol start="3">
 <li>列表里可嵌套引用和代码段语法</li>
 </ol>
-<h3 id="十、换行"><a href="#十、换行" class="headerlink" title="十、换行"></a>十、换行</h3><p>如果另起一行，只需在当前行结尾加 2 个空格</p>
+<h3 id="十、表格"><a href="#十、表格" class="headerlink" title="十、表格"></a>十、表格</h3><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">|表头1|表头2|表头3|表头4|</span><br><span class="line">|-|:-|:-:|-:|</span><br><span class="line">|01|02|03|04|</span><br><span class="line">|a|b|c|d|</span><br></pre></td></tr></table></figure>
+
+<p>说明：<br>1.<code>| - :</code> 之间的多余空格会被忽略，不影响布局。  </p>
+<ol start="2">
+<li>默认标题栏居中对齐，内容居左对齐。  </li>
+<li>第二行 <code>||</code> 间的符号控制对齐方式：<code>-</code> 为默认，<code>:-</code> 表示内容和标题栏居左对齐，<code>:-:</code> 表示内容和标题栏居中对齐，<code>-:</code> 表示内容和标题栏居右对齐。  </li>
+<li>每行第一个|和最后一个|可以省略，<code>-</code> 的数量至少有一个，多余的自动省略。</li>
+</ol>
+<h3 id="十一、换行"><a href="#十一、换行" class="headerlink" title="十一、换行"></a>十一、换行</h3><p>如果另起一行，只需在当前行结尾加 2 个空格</p>
 <p>在当前行的结尾加 2 个空格<br>这行就会新起一行<br>如果是要起一个新段落，只需要空出一行即可。</p>
 <hr>
 <h2 id="前方高能！"><a href="#前方高能！" class="headerlink" title="前方高能！"></a>前方高能！</h2><hr>
@@ -338,7 +346,7 @@ yield from range(x)</code></pre><p>如你不需要代码高亮，可以在代码
 <li>粗斜体</li>
 </ol>
 <p><code>&lt;b&gt;&lt;/b&gt;</code> 在 Markdown 中同样适用 </p>
-<h3 id="本站评论区支持Markdown语法，欢迎尝试。"><a href="#本站评论区支持Markdown语法，欢迎尝试。" class="headerlink" title="本站评论区支持Markdown语法，欢迎尝试。"></a>本站评论区支持Markdown语法，欢迎尝试。</h3><p>参考文章：<br><a href="https://www.jianshu.com/p/191d1e21f7ed" target="_blank" rel="noopener">Markdown基本语法-高鸿祥-简书</a><br><a href="https://segmentfault.com/markdown" target="_blank" rel="noopener">Markdown 编辑器语法指南-思否Segmentfault</a></p>
+<h3 id="本站评论区支持Markdown语法，欢迎尝试。"><a href="#本站评论区支持Markdown语法，欢迎尝试。" class="headerlink" title="本站评论区支持Markdown语法，欢迎尝试。"></a>本站评论区支持Markdown语法，欢迎尝试。</h3><p>参考文章：<br><a href="https://www.jianshu.com/p/191d1e21f7ed" target="_blank" rel="noopener">Markdown 基本语法-高鸿祥-简书</a><br><a href="https://segmentfault.com/markdown" target="_blank" rel="noopener">Markdown 编辑器语法指南-思否Segmentfault</a><br><a href="https://www.jianshu.com/p/b0f56b7d7ee8" target="_blank" rel="noopener">Markdown 创建表格-橡皮24-简书</a></p>
 
         </div>
         
@@ -599,9 +607,13 @@ yield from range(x)</code></pre><p>如你不需要代码高亮，可以在代码
         <span class="has-mr-6">2.2.4</span>
         <span>九、列表</span>
         </a></li><li>
-        <a class="is-flex" href="#十、换行">
+        <a class="is-flex" href="#十、表格">
         <span class="has-mr-6">2.2.5</span>
-        <span>十、换行</span>
+        <span>十、表格</span>
+        </a></li><li>
+        <a class="is-flex" href="#十一、换行">
+        <span class="has-mr-6">2.2.6</span>
+        <span>十一、换行</span>
         </a></li></ul></li><li>
         <a class="is-flex" href="#前方高能！">
         <span class="has-mr-6">2.3</span>

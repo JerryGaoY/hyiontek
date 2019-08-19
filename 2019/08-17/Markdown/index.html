@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+<title>Markdown 编辑器语法汇总 - Hyiontek,Jerry Gao的个人博客</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+    <meta name="description" content="Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。Markdown的语法简洁明了、学习容易，而且功能比纯文本更强，因此有很多人用它写博客。以下是Markdown常用语法汇总。">
+<meta name="keywords" content="💻计算机,&lt;&#x2F;&gt;编程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown 编辑器语法汇总">
+<meta property="og:url" content="https://hyiontek.com/2019/08-17/Markdown/index.html">
+<meta property="og:site_name" content="Hyiontek,Jerry Gao的个人博客">
+<meta property="og:description" content="Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。Markdown的语法简洁明了、学习容易，而且功能比纯文本更强，因此有很多人用它写博客。以下是Markdown常用语法汇总。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://s2.ax1x.com/2019/08/17/mmq5k9.jpg">
+<meta property="og:updated_time" content="2019-08-19T00:07:33.161Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Markdown 编辑器语法汇总">
+<meta name="twitter:description" content="Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。Markdown的语法简洁明了、学习容易，而且功能比纯文本更强，因此有很多人用它写博客。以下是Markdown常用语法汇总。">
+<meta name="twitter:image" content="https://s2.ax1x.com/2019/08/17/mmq5k9.jpg">
+
+
+
+
+
+<link rel="alternative" href="atom.xml" title="Markdown 编辑器语法汇总" type="application/atom+xml">
+
+
+
+<link rel="icon" href="/images/favicon.ico">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+<link rel="stylesheet" href="/css/back-to-top.css">
+
+
+    
+    
+
+    
+    
+<script>
+var _hmt = _hmt || [];
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?acd41e8a0f6f31c74f2e76a2e48003e7";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+    
+    
+
+    
+    
+<link rel="stylesheet" href="/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-7113769690139340",
+    enable_page_level_ads: true
+  });
+</script>
+</head>
+<body class="is-3-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/">
+            
+                <img src="/images/logo.svg" alt="Markdown 编辑器语法汇总" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/">Home</a>
+                
+                <a class="navbar-item" href="/archives">Archives</a>
+                
+                <a class="navbar-item" href="/categories">Categories</a>
+                
+                <a class="navbar-item" href="/tags">Tags</a>
+                
+                <a class="navbar-item" href="/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                    
+                    
+                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="https://github.com/JerryGaoY/hyiontek">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                    
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="搜索" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://s2.ax1x.com/2019/08/17/mmq5k9.jpg" alt="Markdown 编辑器语法汇总">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-08-17T10:53:43.000Z">2019-08-17</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/📝教程/">📝教程</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    12 minutes 读完 (大约 1742 个字)
+                </span>
+                
+                
+                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
+                    <i class="far fa-eye"></i>
+                    <span id="busuanzi_value_page_pv">0</span>次访问
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Markdown 编辑器语法汇总
+            
+        </h1>
+        <div class="content">
+            <p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。Markdown的语法简洁明了、学习容易，而且功能比纯文本更强，因此有很多人用它写博客。以下是Markdown常用语法汇总。</p>
+<a id="more"></a>
+<h3 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h3><p>在标题前加#，如下</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 这是一级标题</span><br><span class="line">## 这是二级标题</span><br><span class="line">### 这是三级标题</span><br><span class="line">#### 这是四级标题</span><br><span class="line">##### 这是五级标题</span><br><span class="line">###### 这是六级标题</span><br></pre></td></tr></table></figure>
+
+<p>效果如下：</p>
+<h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><h3 id="这是三级标题"><a href="#这是三级标题" class="headerlink" title="这是三级标题"></a>这是三级标题</h3><h4 id="这是四级标题"><a href="#这是四级标题" class="headerlink" title="这是四级标题"></a>这是四级标题</h4><h5 id="这是五级标题"><a href="#这是五级标题" class="headerlink" title="这是五级标题"></a>这是五级标题</h5><h6 id="这是六级标题"><a href="#这是六级标题" class="headerlink" title="这是六级标题"></a>这是六级标题</h6><h3 id="二、字体"><a href="#二、字体" class="headerlink" title="二、字体"></a>二、字体</h3><h4 id="1-加粗"><a href="#1-加粗" class="headerlink" title="1. 加粗"></a>1. 加粗</h4><p>在要加粗内容前后加两个*，如下：</p>
+<p> <code>**粗体**</code></p>
+<p>效果： <strong>粗体</strong></p>
+<h4 id="2-斜体"><a href="#2-斜体" class="headerlink" title="2. 斜体"></a>2. 斜体</h4><p>在要加斜体内容前后加一个*，如下：</p>
+<p> <code>*斜体*</code></p>
+<p>效果： <em>斜体</em></p>
+<h4 id="3-斜体加粗"><a href="#3-斜体加粗" class="headerlink" title="3. 斜体加粗"></a>3. 斜体加粗</h4><p>在要斜体加粗内容前后加三个*，如下：</p>
+<p> <code>***斜体加粗***</code></p>
+<p>效果： <strong><em>斜体加粗</em></strong></p>
+<p>如果你的描述中需要用到 markdown 的符号，比如 “ _ # * “ 等，但又不想它被转义，这时候可以在这些符号前加反斜杠，如 <code>\_ \# \*</code> 进行避免。</p>
+<p>示例：</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">\_不想这里的文本变斜体\_</span><br><span class="line">\*\*不想这里的文本被加粗\*\*</span><br></pre></td></tr></table></figure>
+
+<p>效果：<br>_不想这里的文本变斜体_<br>**不想这里的文本被加粗**</p>
+<h3 id="三、删除线"><a href="#三、删除线" class="headerlink" title="三、删除线"></a>三、删除线</h3><p>要加删除线的文字前后加两个~号，如下：</p>
+<p><code>~~这是加删除线的文字~~</code></p>
+<p>效果：<del>这是加删除线的文字</del></p>
+<h3 id="四、引用"><a href="#四、引用" class="headerlink" title="四、引用"></a>四、引用</h3><p>在引用的文字前加<code>&gt;和空格</code>即可。引用可以嵌套，如加两个<code>&gt;和空格</code>及以上。如果引用中换行，可以用<code>&lt;br&gt;</code>进行换行，也可以换行后再加上<code>&gt;和空格</code>。列表、子列表、代码段的语法在引用中同样适用。如下：</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt; 这是引用的内容</span><br><span class="line">&gt; &gt; 这是引用的内容</span><br><span class="line"></span><br><span class="line">&gt; 这是引用的内容&lt;br&gt;这是引用的内容</span><br><span class="line"></span><br><span class="line">&gt; 这是引用的内容</span><br><span class="line">&gt; 这是引用的内容</span><br></pre></td></tr></table></figure>
+
+<p>效果如下：</p>
+<blockquote>
+<p>这是引用的内容</p>
+<blockquote>
+<p>这是引用的内容</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>这是引用的内容<br>这是引用的内容</p>
+</blockquote>
+<blockquote>
+<p>这是引用的内容<br>这是引用的内容</p>
+</blockquote>
+<p>五、分割线<br>如果你有写分割线的习惯，可以新起一行输入三个或者三个以上的 - 或者 * 。当前后都有段落时，请空出一行。</p>
+<p>示例：</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">----</span><br><span class="line">***</span><br><span class="line">*****</span><br></pre></td></tr></table></figure>
+
+<h2 id="效果："><a href="#效果：" class="headerlink" title="效果："></a>效果：</h2><hr>
+<hr>
+<hr>
+<h3 id="六、超链接"><a href="#六、超链接" class="headerlink" title="六、超链接"></a>六、超链接</h3><ul>
+<li>常用方法</li>
+</ul>
+<p>文字链接： <code>[链接名称](http://链接网址)</code></p>
+<p>网址链接： <code>&lt;http://链接网址&gt;</code></p>
+<p>效果：<a href="http://链接网址" target="_blank" rel="noopener">链接名称</a></p>
+<p>&emsp;&emsp;&emsp;<a href="http://链接网址" target="_blank" rel="noopener">http://链接网址</a></p>
+<ul>
+<li>注：Markdown本身语法不支持链接在新页面中打开，如果想要在新页面中打开的话可以用html语言的a标签代替。</li>
+</ul>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;超链接地址&quot; target=&quot;_blank&quot;&gt;超链接名&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>高级链接技巧</li>
+</ul>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[Google][1]     #（这个链接用 1 作为网址变量）</span><br><span class="line"></span><br><span class="line">[Yahoo!][yahoo] #（这个链接用 yahoo 作为网址变量）</span><br><span class="line"></span><br><span class="line">******文章内容******</span><br><span class="line"></span><br><span class="line"> #（然后在文档的结尾为变量赋值（网址）↓）</span><br><span class="line"></span><br><span class="line">[1]: https://www.google.com/ </span><br><span class="line">[yahoo]: https://www.yahoo.com/</span><br></pre></td></tr></table></figure>
+
+<p>效果：<a href="https://www.google.com/" target="_blank" rel="noopener">Google</a></p>
+<p>&emsp;&emsp;&emsp;<a href="https://www.yahoo.com/" target="_blank" rel="noopener">Yahoo!</a></p>
+<h3 id="七、图片"><a href="#七、图片" class="headerlink" title="七、图片"></a>七、图片</h3><p>跟链接的方法区别在于前面加了个感叹号!，这样是不是觉得好记多了呢？</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![图片名称](http://图片网址)</span><br></pre></td></tr></table></figure>
+
+<p>当然，你也可以像网址那样对图片网址使用变量</p>
+<h3 id="八、代码"><a href="#八、代码" class="headerlink" title="八、代码"></a>八、代码</h3><p>如果你只想高亮语句中的某个函数名或关键字，可以在其前后加一个`符号实现。这个符号在电脑键盘 Tab 的上方。</p>
+<p>你也可以用三个上述符号包裹一段代码，通常编辑器根据代码片段适配合适的高亮方法，但也可以在代码段前输入语言名称指定一种语言。</p>
+<p>也可以使用 4 空格或Tab缩进，再贴上代码，实现相同的的效果</p>
+<pre><code>def g(x):
+    yield from range(x, 0, -1)
+yield from range(x)</code></pre><p>如你不需要代码高亮，可以在代码段前输入nohighlight禁用。</p>
+<h3 id="九、列表"><a href="#九、列表" class="headerlink" title="九、列表"></a>九、列表</h3><h4 id="1-普通无序列表"><a href="#1-普通无序列表" class="headerlink" title="1. 普通无序列表"></a>1. 普通无序列表</h4><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- 列表文本前使用 [减号+空格]</span><br><span class="line">+ 列表文本前使用 [加号+空格]</span><br><span class="line">* 列表文本前使用 [星号+空格]</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<ul>
+<li>列表文本前使用 [减号+空格]</li>
+</ul>
+<ul>
+<li>列表文本前使用 [加号+空格]</li>
+</ul>
+<ul>
+<li>列表文本前使用 [星号+空格]</li>
+</ul>
+<h4 id="2-普通有序列表"><a href="#2-普通有序列表" class="headerlink" title="2. 普通有序列表"></a>2. 普通有序列表</h4><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. 列表前使用 [数字+空格]</span><br><span class="line">2. 会自动帮你添加数字</span><br><span class="line">7. 不用担心数字不对，显示的时候会自动把这行的 7 纠正为 3</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<ol>
+<li>列表前使用 [数字+空格]</li>
+<li>会自动帮你添加数字</li>
+<li>不用担心数字不对，显示的时候会自动把这行的 7 纠正为 3</li>
+</ol>
+<h4 id="3-列表嵌套"><a href="#3-列表嵌套" class="headerlink" title="3.列表嵌套"></a>3.列表嵌套</h4><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1. 列出所有元素：</span><br><span class="line">    - 无序列表元素 A</span><br><span class="line">        1. 元素 A 的有序子列表</span><br><span class="line">    - 前面加四个空格</span><br><span class="line">2. 列表里的多段换行：</span><br><span class="line">    前面必须加四个空格，</span><br><span class="line">    这样换行，整体的格式不会乱</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<ol>
+<li>列出所有元素：<ul>
+<li>无序列表元素 A<ol>
+<li>元素 A 的有序子列表</li>
+</ol>
+</li>
+<li>前面加四个空格</li>
+</ul>
+</li>
+<li>列表里的多段换行：<br> 前面必须加四个空格，<br> 这样换行，整体的格式不会乱</li>
+</ol>
+<hr>
+<ol start="3">
+<li>列表里可嵌套引用和代码段语法</li>
+</ol>
+<h3 id="十、表格"><a href="#十、表格" class="headerlink" title="十、表格"></a>十、表格</h3><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">|表头1|表头2|表头3|表头4|</span><br><span class="line">|-|:-|:-:|-:|</span><br><span class="line">|01|02|03|04|</span><br><span class="line">|a|b|c|d|</span><br></pre></td></tr></table></figure>
+
+<p>说明：<br>1.<code>| - :</code> 之间的多余空格会被忽略，不影响布局。  </p>
+<ol start="2">
+<li>默认标题栏居中对齐，内容居左对齐。  </li>
+<li>第二行 <code>||</code> 间的符号控制对齐方式：<code>-</code> 为默认，<code>:-</code> 表示内容和标题栏居左对齐，<code>:-:</code> 表示内容和标题栏居中对齐，<code>-:</code> 表示内容和标题栏居右对齐。  </li>
+<li>每行第一个|和最后一个|可以省略，<code>-</code> 的数量至少有一个，多余的自动省略。</li>
+</ol>
+<h3 id="十一、换行"><a href="#十一、换行" class="headerlink" title="十一、换行"></a>十一、换行</h3><p>如果另起一行，只需在当前行结尾加 2 个空格</p>
+<p>在当前行的结尾加 2 个空格<br>这行就会新起一行<br>如果是要起一个新段落，只需要空出一行即可。</p>
+<hr>
+<h2 id="前方高能！"><a href="#前方高能！" class="headerlink" title="前方高能！"></a>前方高能！</h2><hr>
+<h3 id="高级技巧"><a href="#高级技巧" class="headerlink" title="高级技巧"></a>高级技巧</h3><p>行内 HTML 元素<br>目前只支持部分段内 HTML 元素效果，包括<code>&lt;kdb&gt; &lt;b&gt; &lt;i&gt; &lt;em&gt; &lt;sup&gt; &lt;sub&gt; &lt;br&gt;</code>，如</p>
+<ol>
+<li>键位显示</li>
+</ol>
+<p>使用 <code>&lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;Alt&lt;/kbd&gt;+&lt;kbd&gt;Del&lt;/kbd&gt;</code> 重启电脑</p>
+<ol start="2">
+<li>代码块</li>
+</ol>
+<p>使用 <code>&lt;pre&gt;&lt;/pre&gt;</code> 元素同样可以形成代码块</p>
+<ol start="3">
+<li>粗斜体</li>
+</ol>
+<p><code>&lt;b&gt;&lt;/b&gt;</code> 在 Markdown 中同样适用 </p>
+<h3 id="本站评论区支持Markdown语法，欢迎尝试。"><a href="#本站评论区支持Markdown语法，欢迎尝试。" class="headerlink" title="本站评论区支持Markdown语法，欢迎尝试。"></a>本站评论区支持Markdown语法，欢迎尝试。</h3><p>参考文章：<br><a href="https://www.jianshu.com/p/191d1e21f7ed" target="_blank" rel="noopener">Markdown 基本语法-高鸿祥-简书</a>  </p>
+<p><a href="https://segmentfault.com/markdown" target="_blank" rel="noopener">Markdown 编辑器语法指南-思否Segmentfault</a>  </p>
+<p><a href="https://www.jianshu.com/p/b0f56b7d7ee8" target="_blank" rel="noopener">Markdown 创建表格-橡皮24-简书</a></p>
+
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/编程/"></>编程</a>, <a class="has-link-grey -link" href="/tags/💻计算机/">💻计算机</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="social-share"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css">
+<script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script>
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
+        <div class="buttons is-centered">
+            
+                
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-alipay"></i>
+    </span>
+    <span>支付宝</span>
+    <div class="qrcode"><img src="/images/alipay.jpg" alt="支付宝"></div>
+</a>
+
+                
+                
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>微信</span>
+    <div class="qrcode"><img src="/images/WeChat.png" alt="微信"></div>
+</a>
+
+                
+                <!-- Visit https://www.paypal.com/donate/buttons/ to get your donate button -->
+
+<a class="button is-warning donate" onclick="document.getElementById(&#39;paypal-donate-form&#39;).submit()">
+    <span class="icon is-small">
+        <i class="fab fa-paypal"></i>
+    </span>
+    <span>Paypal</span>
+</a>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" id="paypal-donate-form">
+    <input type="hidden" name="cmd" value="_donations">
+    <input type="hidden" name="business" value="1369473665@qq.com">
+    <input type="hidden" name="currency_code" value="USD">
+</form>
+
+                
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/08-18/Vscode-cpp-compile-setting/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Windows下Visual Studio Code入门和配置C++编译环境</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/08-16/The-Dream-of-Red-Mansion/">
+                <span class="level-item">晓世家望族的兴衰荣辱——读《红楼梦有感》</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">评论</h3>
+        
+<div id="valine-thread" class="content"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#valine-thread' ,
+        notify: true,
+        verify: true,
+        app_id: 'anU3jLkQPQrXYbo1CydVIRUA-MdYXbMMI',
+        app_key: 'yTxQWv2ISG1KkGkzJOArVb1b',
+        placeholder: 'Jerry Gao'
+    });
+</script>
+
+    </div>
+</div>
+</div>
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left is-sticky">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <nav class="level">
+            <div class="level-item has-text-centered" style="flex-shrink: 1">
+                <div>
+                    
+                        <img class="image is-128x128 has-mb-6" src="/images/avatar.png" alt="Jerry Gao">
+                    
+                    
+                    <p class="is-size-4 is-block">
+                        Jerry Gao
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-block">
+                        Student,IT learner
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-flex is-flex-center has-text-grey">
+                        <i class="fas fa-map-marker-alt has-mr-7"></i>
+                        <span>Orion Arm, The Milky Way</span>
+                    </p>
+                    
+                </div>
+            </div>
+        </nav>
+        <nav class="level is-mobile">
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        文章
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        15
+                    </p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        分类
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        5
+                    </p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        标签
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        13
+                    </p>
+                </div>
+            </div>
+        </nav>
+        <div class="level">
+            <a class="level-item button is-link is-rounded" href="https://www.jianshu.com/u/ee1af2f5fbf4" target="_blank">
+                关注我</a>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Github" href="https://github.com/JerryGaoY">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Weibo" href="https://weibo.com/JerryGaoYC">
+                
+                <i class="fab fa-weibo"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="RSS" href="/atom.xml">
+                
+                <i class="fas fa-rss"></i>
+                
+            </a>
+            
+        </div>
+        
+    </div>
+</div>
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                目录
+            </h3>
+            <ul class="menu-list"><ul class="menu-list"><ul class="menu-list"><li>
+        <a class="is-flex" href="#一、标题">
+        <span class="has-mr-6">1.1.1</span>
+        <span>一、标题</span>
+        </a></li></ul></ul><li>
+        <a class="is-flex" href="#这是一级标题">
+        <span class="has-mr-6">2</span>
+        <span>这是一级标题</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#这是二级标题">
+        <span class="has-mr-6">2.1</span>
+        <span>这是二级标题</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#这是三级标题">
+        <span class="has-mr-6">2.1.1</span>
+        <span>这是三级标题</span>
+        </a></li><li>
+        <a class="is-flex" href="#二、字体">
+        <span class="has-mr-6">2.1.2</span>
+        <span>二、字体</span>
+        </a></li><li>
+        <a class="is-flex" href="#三、删除线">
+        <span class="has-mr-6">2.1.3</span>
+        <span>三、删除线</span>
+        </a></li><li>
+        <a class="is-flex" href="#四、引用">
+        <span class="has-mr-6">2.1.4</span>
+        <span>四、引用</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#效果：">
+        <span class="has-mr-6">2.2</span>
+        <span>效果：</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#六、超链接">
+        <span class="has-mr-6">2.2.1</span>
+        <span>六、超链接</span>
+        </a></li><li>
+        <a class="is-flex" href="#七、图片">
+        <span class="has-mr-6">2.2.2</span>
+        <span>七、图片</span>
+        </a></li><li>
+        <a class="is-flex" href="#八、代码">
+        <span class="has-mr-6">2.2.3</span>
+        <span>八、代码</span>
+        </a></li><li>
+        <a class="is-flex" href="#九、列表">
+        <span class="has-mr-6">2.2.4</span>
+        <span>九、列表</span>
+        </a></li><li>
+        <a class="is-flex" href="#十、表格">
+        <span class="has-mr-6">2.2.5</span>
+        <span>十、表格</span>
+        </a></li><li>
+        <a class="is-flex" href="#十一、换行">
+        <span class="has-mr-6">2.2.6</span>
+        <span>十一、换行</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#前方高能！">
+        <span class="has-mr-6">2.3</span>
+        <span>前方高能！</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#高级技巧">
+        <span class="has-mr-6">2.3.1</span>
+        <span>高级技巧</span>
+        </a></li><li>
+        <a class="is-flex" href="#本站评论区支持Markdown语法，欢迎尝试。">
+        <span class="has-mr-6">2.3.2</span>
+        <span>本站评论区支持Markdown语法，欢迎尝试。</span>
+        </a></li></ul></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            标签云
+        </h3>
+        <a href="/tags/1001软件/" style="font-size: 10px;">1001软件</a> <a href="/tags/编程/" style="font-size: 16.67px;"></>编程</a> <a href="/tags/♻️环保/" style="font-size: 10px;">♻️环保</a> <a href="/tags/⚛️科技/" style="font-size: 10px;">⚛️科技</a> <a href="/tags/🇨🇳爱国/" style="font-size: 16.67px;">🇨🇳爱国</a> <a href="/tags/🌐网络/" style="font-size: 10px;">🌐网络</a> <a href="/tags/🎞️电影/" style="font-size: 20px;">🎞️电影</a> <a href="/tags/💻计算机/" style="font-size: 20px;">💻计算机</a> <a href="/tags/📓日记/" style="font-size: 10px;">📓日记</a> <a href="/tags/📜经典/" style="font-size: 10px;">📜经典</a> <a href="/tags/🥢🍽️美食/" style="font-size: 10px;">🥢🍽️美食</a> <a href="/tags/🧑人物/" style="font-size: 13.33px;">🧑人物</a> <a href="/tags/🧨节日/" style="font-size: 10px;">🧨节日</a>
+    </div>
+</div>
+
+    
+    
+        <div class="column-right-shadow is-hidden-widescreen ">
+        
+            
+
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            链接
+        </h3>
+        <ul class="menu-list">
+        
+            <li>
+                <a class="level is-mobile" href="https://hexo.io" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">Hexo</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">hexo.io</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="http://msdn.itellyou.cn/" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">MSDN,我告诉你</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">msdn.itellyou.cn</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://www.v2ex.com/" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">V2EX</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">www.v2ex.com</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://www.csdn.net/" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">CSDN</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">www.csdn.net</span>
+                    </span>
+                </a>
+            </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+
+
+        
+            
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                分类
+            </h3>
+            <ul class="menu-list">
+            <li>
+        <a class="level is-marginless" href="/categories/🎞️观后感/">
+            <span class="level-start">
+                <span class="level-item">🎞️观后感</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">3</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/👍推荐/">
+            <span class="level-start">
+                <span class="level-item">👍推荐</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/📃随笔/">
+            <span class="level-start">
+                <span class="level-item">📃随笔</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">7</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/📖读后感/">
+            <span class="level-start">
+                <span class="level-item">📖读后感</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/📝教程/">
+            <span class="level-start">
+                <span class="level-item">📝教程</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">3</span>
+            </span>
+        </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+        
+            
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            最新文章
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/08-18/Vscode-cpp-compile-setting/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="https://s2.ax1x.com/2019/08/18/mQ7NVS.jpg" alt="Windows下Visual Studio Code入门和配置C++编译环境">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-18T14:42:31.000Z">2019-08-18</time></div>
+                    <a href="/2019/08-18/Vscode-cpp-compile-setting/" class="has-link-black-ter is-size-6">Windows下Visual Studio Code入门和配置C++编译环境</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/📝教程/">📝教程</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/08-17/Markdown/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="https://s2.ax1x.com/2019/08/17/mmq5k9.jpg" alt="Markdown 编辑器语法汇总">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-17T10:53:43.000Z">2019-08-17</time></div>
+                    <a href="/2019/08-17/Markdown/" class="has-link-black-ter is-size-6">Markdown 编辑器语法汇总</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/📝教程/">📝教程</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/08-16/The-Dream-of-Red-Mansion/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="https://s2.ax1x.com/2019/08/16/mm5i9O.jpg" alt="晓世家望族的兴衰荣辱——读《红楼梦有感》">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-16T13:58:09.000Z">2019-08-16</time></div>
+                    <a href="/2019/08-16/The-Dream-of-Red-Mansion/" class="has-link-black-ter is-size-6">晓世家望族的兴衰荣辱——读《红楼梦有感》</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/📖读后感/">📖读后感</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/08-15/Zhongyuan-Festival/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="https://s2.ax1x.com/2019/08/15/mVgVHg.png" alt="中元节，简谈中国传统节日">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-15T13:38:37.000Z">2019-08-15</time></div>
+                    <a href="/2019/08-15/Zhongyuan-Festival/" class="has-link-black-ter is-size-6">中元节，简谈中国传统节日</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/📃随笔/">📃随笔</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/08-14/something-about-recycling-waste/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="https://s2.ax1x.com/2019/08/14/mkxCRK.jpg" alt="中国“史上最严”垃圾分类施行，你准备好了吗？">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-14T13:26:19.000Z">2019-08-14</time></div>
+                    <a href="/2019/08-14/something-about-recycling-waste/" class="has-link-black-ter is-size-6">中国“史上最严”垃圾分类施行，你准备好了吗？</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/📃随笔/">📃随笔</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            归档
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/08/">
+                <span class="level-start">
+                    <span class="level-item">August 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">15</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                标签
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/1001软件/">
+                        <span class="tag">1001软件</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/编程/">
+                        <span class="tag">&lt;/&gt;编程</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/♻️环保/">
+                        <span class="tag">♻️环保</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/⚛️科技/">
+                        <span class="tag">⚛️科技</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/🇨🇳爱国/">
+                        <span class="tag">🇨🇳爱国</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/🌐网络/">
+                        <span class="tag">🌐网络</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/🎞️电影/">
+                        <span class="tag">🎞️电影</span>
+                        <span class="tag is-grey">4</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/💻计算机/">
+                        <span class="tag">💻计算机</span>
+                        <span class="tag is-grey">4</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/📓日记/">
+                        <span class="tag">📓日记</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/📜经典/">
+                        <span class="tag">📜经典</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/🥢🍽️美食/">
+                        <span class="tag">🥢🍽️美食</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/🧑人物/">
+                        <span class="tag">🧑人物</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/🧨节日/">
+                        <span class="tag">🧨节日</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+        
+        </div>
+    
+</div>
+
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right ">
+    
+        
+
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            链接
+        </h3>
+        <ul class="menu-list">
+        
+            <li>
+                <a class="level is-mobile" href="https://hexo.io" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">Hexo</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">hexo.io</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="http://msdn.itellyou.cn/" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">MSDN,我告诉你</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">msdn.itellyou.cn</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://www.v2ex.com/" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">V2EX</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">www.v2ex.com</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://www.csdn.net/" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">CSDN</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">www.csdn.net</span>
+                    </span>
+                </a>
+            </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+
+
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                分类
+            </h3>
+            <ul class="menu-list">
+            <li>
+        <a class="level is-marginless" href="/categories/🎞️观后感/">
+            <span class="level-start">
+                <span class="level-item">🎞️观后感</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">3</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/👍推荐/">
+            <span class="level-start">
+                <span class="level-item">👍推荐</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/📃随笔/">
+            <span class="level-start">
+                <span class="level-item">📃随笔</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">7</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/📖读后感/">
+            <span class="level-start">
+                <span class="level-item">📖读后感</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/📝教程/">
+            <span class="level-start">
+                <span class="level-item">📝教程</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">3</span>
+            </span>
+        </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            最新文章
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/08-18/Vscode-cpp-compile-setting/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="https://s2.ax1x.com/2019/08/18/mQ7NVS.jpg" alt="Windows下Visual Studio Code入门和配置C++编译环境">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-18T14:42:31.000Z">2019-08-18</time></div>
+                    <a href="/2019/08-18/Vscode-cpp-compile-setting/" class="has-link-black-ter is-size-6">Windows下Visual Studio Code入门和配置C++编译环境</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/📝教程/">📝教程</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/08-17/Markdown/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="https://s2.ax1x.com/2019/08/17/mmq5k9.jpg" alt="Markdown 编辑器语法汇总">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-17T10:53:43.000Z">2019-08-17</time></div>
+                    <a href="/2019/08-17/Markdown/" class="has-link-black-ter is-size-6">Markdown 编辑器语法汇总</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/📝教程/">📝教程</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/08-16/The-Dream-of-Red-Mansion/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="https://s2.ax1x.com/2019/08/16/mm5i9O.jpg" alt="晓世家望族的兴衰荣辱——读《红楼梦有感》">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-16T13:58:09.000Z">2019-08-16</time></div>
+                    <a href="/2019/08-16/The-Dream-of-Red-Mansion/" class="has-link-black-ter is-size-6">晓世家望族的兴衰荣辱——读《红楼梦有感》</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/📖读后感/">📖读后感</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/08-15/Zhongyuan-Festival/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="https://s2.ax1x.com/2019/08/15/mVgVHg.png" alt="中元节，简谈中国传统节日">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-15T13:38:37.000Z">2019-08-15</time></div>
+                    <a href="/2019/08-15/Zhongyuan-Festival/" class="has-link-black-ter is-size-6">中元节，简谈中国传统节日</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/📃随笔/">📃随笔</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/08-14/something-about-recycling-waste/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="https://s2.ax1x.com/2019/08/14/mkxCRK.jpg" alt="中国“史上最严”垃圾分类施行，你准备好了吗？">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-14T13:26:19.000Z">2019-08-14</time></div>
+                    <a href="/2019/08-14/something-about-recycling-waste/" class="has-link-black-ter is-size-6">中国“史上最严”垃圾分类施行，你准备好了吗？</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/📃随笔/">📃随笔</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            归档
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/08/">
+                <span class="level-start">
+                    <span class="level-item">August 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">15</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                标签
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/1001软件/">
+                        <span class="tag">1001软件</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/编程/">
+                        <span class="tag">&lt;/&gt;编程</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/♻️环保/">
+                        <span class="tag">♻️环保</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/⚛️科技/">
+                        <span class="tag">⚛️科技</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/🇨🇳爱国/">
+                        <span class="tag">🇨🇳爱国</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/🌐网络/">
+                        <span class="tag">🌐网络</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/🎞️电影/">
+                        <span class="tag">🎞️电影</span>
+                        <span class="tag is-grey">4</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/💻计算机/">
+                        <span class="tag">💻计算机</span>
+                        <span class="tag is-grey">4</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/📓日记/">
+                        <span class="tag">📓日记</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/📜经典/">
+                        <span class="tag">📜经典</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/🥢🍽️美食/">
+                        <span class="tag">🥢🍽️美食</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/🧑人物/">
+                        <span class="tag">🧑人物</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/🧨节日/">
+                        <span class="tag">🧨节日</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/">
+                
+                    <img src="/images/logo.svg" alt="Markdown 编辑器语法汇总" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Jerry Gao&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                <br>
+                <span id="busuanzi_container_site_uv">
+                共<span id="busuanzi_value_site_uv">0</span>个访客
+                </span>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white " target="_blank" title="简书" href="https://www.jianshu.com/">
+                        
+                        简书
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Font Awesome" href="http://www.fontawesome.com.cn/">
+                        
+                        <i class="fab fa-font-awesome"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Download Icarus Theme on GitHub" href="http://github.com/ppoffice/hexo-theme-icarus">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("zh-Hans");</script>
+
+
+    
+    
+    
+    <script src="/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    <script src="/js/gallery.js" defer></script>
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        });
+    });
+</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+});
+</script>
+
+    
+    
+
+<a id="back-to-top" title="回到顶端" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<script src="/js/back-to-top.js" defer></script>
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    <script src="/js/clipboard.js" defer></script>
+    
+
+    
+    
+    
+
+    
+
+
+<script src="/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js" defer></script>
+<link rel="stylesheet" href="/css/search.css">
+<link rel="stylesheet" href="/css/insight.css">
+    
+
+    <!-- 雪花特效 -->
+    <script type="text/javascript">
+        var windowWidth = $(window).width();
+        if (windowWidth > 480) {
+          document.write('<script type="text/javascript" src="/js/src/snow.js"><\/script>');
+        }
+      </script>
+      
+</body>
+</html>

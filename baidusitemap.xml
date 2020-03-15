@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://hyiontek.com/2050/01-01/download/</loc>
+    <lastmod>2020-03-15</lastmod>
+  </url>  <url>
     <loc>https://hyiontek.com/2020/01-20/huamei/</loc>
     <lastmod>2020-01-20</lastmod>
   </url>  <url>
@@ -29,9 +32,6 @@
     <lastmod>2019-11-10</lastmod>
   </url>  <url>
     <loc>https://hyiontek.com/2019/08-14/something-about-recycling-waste/</loc>
-    <lastmod>2019-11-10</lastmod>
-  </url>  <url>
-    <loc>https://hyiontek.com/2019/08-08/Peter/</loc>
     <lastmod>2019-11-10</lastmod>
   </url>  <url>
     <loc>https://hyiontek.com/2019/08-17/Markdown/</loc>

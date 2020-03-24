@@ -6,6 +6,7 @@ Disallow: /js/
 Disallow: /css/
 Disallow: /images/
 Disallow: /tags/
+Disallow:/archives/781a8270.html
 
 Sitemap: https:/hyiontek.com/sitemap.xml
 Sitemap: https:/hyiontek.com/baidusitemap.xml
